@@ -59,7 +59,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -72,7 +73,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -1722,9 +1724,48 @@
     "name": "solc",
     "version": "0.6.2+commit.bacdbe57.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {
+        "0x78eaebe37a28490ff43ed0e95bdc47de1587156ac0069b652e1d2d9f42464e98": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "payer",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "date",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "paymentId",
+              "type": "uint256"
+            }
+          ],
+          "name": "PaymentDone",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xbD1140DE37Ed514FBb17a75f56Df1f0e4425e24B",
+      "transactionHash": "0xf1c0f9546f74de63f5cf99f3dc52c8c0051b6562d44f7221a92c49fa00543828"
+    }
+  },
   "schemaVersion": "3.3.0",
-  "updatedAt": "2020-10-12T09:03:35.664Z",
+  "updatedAt": "2020-10-12T09:41:32.307Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
